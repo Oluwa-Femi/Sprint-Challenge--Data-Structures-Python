@@ -34,6 +34,9 @@ print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
 
 # First runtime was 10s on my machine. The second run time with BST is 0.17s
+#  Previous solution was 0(n^2) My solution is a linear solution. Not sure which of them exactly but it looks like 0(log(n))
+
+
 
 # ---------- Stretch Goal -----------
 # Python has built-in tools that allow for a very efficient approach to this problem
