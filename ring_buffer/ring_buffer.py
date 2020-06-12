@@ -6,11 +6,12 @@ class RingBuffer:
         self.stack = []
 
     def append(self, item):
-        # Statement for making first item the oldest
+        # Statement for when the first becomes the oldest
         if self.oldest_node is None:
             self.oldest_node = 0
             return self.stack.append(item)
-        # If list already contains items
+
+        # If the list already contains items            
         elif len(self.stack) + 1 <= self.capacity:
             self.next_oldest = 1
             return self.stack.append(item)
