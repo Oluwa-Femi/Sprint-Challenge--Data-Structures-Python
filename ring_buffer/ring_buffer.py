@@ -22,4 +22,4 @@ class RingBuffer:
                 self.oldest_node = 0
 
     def get(self):
-        pass
+        return self.stack
