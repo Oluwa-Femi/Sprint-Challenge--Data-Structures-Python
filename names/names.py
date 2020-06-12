@@ -28,10 +28,12 @@ for name_2 in names_2:
 for name_1 in names_1:  
     if second_file.contains(name_1):
         duplicates.append(name_1)
-        
+
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
+
+# First runtime was 10s on my machine. The second run time with BST is 0.17s
 
 # ---------- Stretch Goal -----------
 # Python has built-in tools that allow for a very efficient approach to this problem
